@@ -22,5 +22,6 @@ leaderboard submit \
 ```
 
 ```
+python ./server/main.py
 leaderboard list
 ```
