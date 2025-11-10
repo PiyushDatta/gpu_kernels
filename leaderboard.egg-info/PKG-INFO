@@ -1,0 +1,23 @@
+Metadata-Version: 2.4
+Name: leaderboard
+Version: 0.1.0
+Summary: A CLI tool for submitting kernel files to BackendBench
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: click>=8.0.0
+Requires-Dist: requests>=2.28.0
+Requires-Dist: rich>=13.0.0
+Requires-Dist: fastapi>=0.104.0
+Requires-Dist: uvicorn[standard]>=0.24.0
+Requires-Dist: pyjwt>=2.8.0
+Requires-Dist: httpx>=0.25.0
+Provides-Extra: dev
+Requires-Dist: pytest>=7.0.0; extra == "dev"
+Dynamic: license-file
+
+# GPU Kernels
+
+`./popcorn-cli --help`
+
+`./popcorn-cli submit --gpu B200 --leaderboard grayscale_v2 --mode leaderboard submission.py`

@@ -1,0 +1,13 @@
+LICENSE
+README.md
+pyproject.toml
+leaderboard/__init__.py
+leaderboard/cli.py
+leaderboard/config.py
+leaderboard/submit.py
+leaderboard.egg-info/PKG-INFO
+leaderboard.egg-info/SOURCES.txt
+leaderboard.egg-info/dependency_links.txt
+leaderboard.egg-info/entry_points.txt
+leaderboard.egg-info/requires.txt
+leaderboard.egg-info/top_level.txt
