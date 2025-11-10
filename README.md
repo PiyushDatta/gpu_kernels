@@ -12,6 +12,8 @@
 
 `./popcorn-cli submit --gpu B200 --leaderboard grayscale_v2 --mode leaderboard submission.py`
 
+`./popcorn-cli submit --gpu B200 --leaderboard vectoradd_v2 --mode leaderboard submission.py`
+
 ```
 leaderboard submit \
   --op add \

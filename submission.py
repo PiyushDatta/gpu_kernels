@@ -1,12 +1,13 @@
-from task import input_t, output_t
+# vectoradd_v2
 import torch
+from task import input_t, output_t
 
-# grayscale kernel
 
 def custom_kernel(data: input_t) -> output_t:
-    data, output = data
-    weights = torch.tensor(
-        [0.2989, 0.5870, 0.1140], device=data.device, dtype=data.dtype
-    )
-    output[...] = torch.sum(data * weights, dim=-1)
-    return output
+    """
+    Simple vector addition using pure PyTorch.
+    """
+    A, B, C = data  # A and B are vectors, C is pre-allocated output
+    # Element-wise vector addition
+    torch.add(A, B, out=C)
+    return C
